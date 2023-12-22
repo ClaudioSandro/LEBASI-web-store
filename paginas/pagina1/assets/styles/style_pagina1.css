@@ -1,0 +1,224 @@
+.Header a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;  
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    min-height : 70px;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-nombre{
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.Header nav a{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.Header nav a:hover{
+    color: black;
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    nav{
+        margin-top: 20px;
+    }
+
+    
+}
+
+
+
+/****************************************************Pantallita**********************************/
+.Pantallita img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/****************************************************Ventiladores**********************************/
+
+.SectionVentiladores{
+    text-align: center;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.SuperContenedorVentilador{
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.SectionVentiladores a{
+    text-decoration: none;
+    color: black;
+}
+
+.SectionVentiladores ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+
+.CuadrosVentiladores {
+    list-style: none;
+    padding-bottom: 20px;
+
+    margin: 0;
+}
+
+.CuadroVentilador {
+    border: 1px solid #ddd;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+.Ventilador {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.Ventilador-img {
+    width: 100%; 
+    height: 300px; 
+}
+
+.Ventilador-texto {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .SuperContenedorVentilador {
+        grid-template-columns: 1fr;
+    }
+    .SuperContenedorVentilador{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .Ventilador-img {
+        width: 100%; 
+        height: 300px; 
+    }
+}
+
+
+/*********************************Footer********************************/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: brown;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding: 45px 0;
+}
+
+.pie-pagina .grupo1 .box figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie-pagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .redes-sociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #efefef;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: all 300ms ease;
+}
+
+.pie-pagina .grupo1 .redes-sociales a:hover{
+    background-color: #efefef;
+    color: #0d2033;
+}
+
+
+.pie-pagina .grupo2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .pie-pagina .grupo1{
+        width:90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+}
