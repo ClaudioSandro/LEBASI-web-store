@@ -11,7 +11,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: brown;
+    background-color: #1f52ae;
     min-height : 70px;
     align-items: center;
     padding: 10px;
@@ -135,13 +135,19 @@ header{
 
 
 /*********************************SectionArticulo*********************************/
+
+
 .SuperContenedor{
-    background-color: yellow;
+    /*background-color: yellow; /*Cambiar color*/
     padding-left: 250px;
     padding-right: 250px;
     
 }
 
+.ArticulosTitulo{
+    text-align: center;
+    padding: 20px 0;
+}
 .SectionArticulos ul{
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +203,7 @@ header{
 {
     width: 370px;
     height: 300px;
-    background-color: brown;
+    background-color: #277be9;
     margin-bottom: 20px;
     position: relative;
 }
@@ -256,7 +262,10 @@ header{
 }
 /*********************************SectionProductosNuevos********************************/
 
-
+.ProductosNuevosTitulo{
+    text-align: center;
+    padding: 20px 0;
+}
 .swiper-ProductosNuevos {
     display: flex;
     justify-content: space-between;
@@ -291,8 +300,12 @@ header{
 
 /*********************************SectionAtencionCliente********************************/
 
+.AtencionClienteTitulo{
+    text-align: center;
+    padding: 20px 0;
+}
 .SuperContenedorAtencionCliente{
-    background-color: green;
+    /*background-color: green;*/ /*Cambiar color*/
     padding-left: 250px;
     padding-right: 250px;
 }
@@ -333,7 +346,7 @@ header{
 .CuadroAtencionCliente2,
 .CuadroAtencionCliente3
 {
-    background-color: brown;
+    background-color: #277be9;
     
     position: relative;
 }
@@ -391,7 +404,7 @@ header{
 
 .pie-pagina{
     width: 100%;
-    background-color: brown;
+    background-color: #224e96;
 }
 
 .pie-pagina .grupo1{
@@ -443,7 +456,7 @@ header{
 
 
 .pie-pagina .grupo2{
-    background-color: #0a1a2a;
+    background-color: #182c53;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
