@@ -78,7 +78,7 @@ header{
 }
 
 .swiper-hero img{
-    height: 340px;
+    /* height: 340px; */
     width : 100%;
     object-fit: cover;
 }
@@ -147,6 +147,8 @@ header{
 .ArticulosTitulo{
     text-align: center;
     padding: 20px 0;
+    
+    
 }
 .SectionArticulos ul{
     display: flex;
@@ -305,9 +307,9 @@ header{
     padding: 20px 0;
 }
 .SuperContenedorAtencionCliente{
-    /*background-color: green;*/ /*Cambiar color*/
     padding-left: 250px;
     padding-right: 250px;
+    margin-bottom: 20px;
 }
 
 
@@ -333,8 +335,7 @@ header{
 {
     width: 300px;
     height: 300px;
-    /*background-color: blue;*/
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
     padding-left: 0;
@@ -345,9 +346,7 @@ header{
 .CuadroAtencionCliente1,
 .CuadroAtencionCliente2,
 .CuadroAtencionCliente3
-{
-    background-color: #277be9;
-    
+{   
     position: relative;
 }
 
@@ -356,12 +355,9 @@ header{
 .CuadroAtencionCliente2 img,
 .CuadroAtencionCliente3 img
 {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px){
