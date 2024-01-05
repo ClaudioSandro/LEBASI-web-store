@@ -67,9 +67,28 @@ header{
         grid-gap: 30px;
         padding: 35px 0;
     }
-    .swiper-hero img{
-        width: auto;
-    }    
+
+    .swiper-img{
+        width: 100%;
+        height: auto;
+
+    }
+    
+    .swiper-hero .swiper-slide:nth-child(1) img {
+        content: url('../media/imagenes/Imagenes de fondo/Fondo_LEBASI_swiper_1_mobile.png'); 
+       
+    }
+
+    .swiper-hero .swiper-slide:nth-child(2) img {
+        content: url('../media/imagenes/Imagenes de fondo/Fondo_LEBASI_swiper_2_mobile.png'); 
+        
+    }
+
+    .swiper-hero .swiper-slide:nth-child(3) img {
+        content: url('../media/imagenes/Imagenes de fondo/Fondo_LEBASI_swiper_3_mobile.png'); 
+        
+    }
+    
 }
 
 
@@ -154,8 +173,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
     list-style: none;
 }
 
@@ -190,10 +209,10 @@ header{
     width: 370px;
     height: 300px;
     /*background-color: blue;*/
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
+
 }
 
 .CuadroArticulo1,
@@ -220,6 +239,7 @@ header{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 

@@ -1,31 +1,23 @@
 /*************************************Slide del header******************************/
-const swiper = new Swiper('.swiper-hero', {
-    // Optional parameters
+  const swiper = new Swiper('.swiper-hero', {
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     allowTouchMove: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
-  
-    // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
     },
-
-    // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    /*scrollbar: {
-      el: '.swiper-scrollbar',
-    },*/
-  });
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+    
+});
+
 
 
 /*************************************Slide de section******************************/
