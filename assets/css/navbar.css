@@ -1,0 +1,62 @@
+body{
+    font-family: sans-serif;
+    margin: 0;  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f52ae;
+    min-height: 70px;
+    align-items: center;
+    padding: 0; 
+    margin: 0; 
+}
+
+.barra-navegacion a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-nombre{
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.Header nav a{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.Header nav a:hover{
+    color: black;
+}
+
+
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    nav{
+        margin-top: 20px;
+    }
+}

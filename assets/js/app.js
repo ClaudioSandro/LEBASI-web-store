@@ -1,5 +1,5 @@
 /*************************************Slide del header******************************/
-  const swiper = new Swiper('.swiper-hero', {
+const swiper = new Swiper('.swiper-hero', {
     direction: 'horizontal',
     loop: false,
     allowTouchMove: true,
