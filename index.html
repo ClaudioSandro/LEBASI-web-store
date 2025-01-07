@@ -11,8 +11,25 @@
 </head>
 <body>
 
-    <iframe src="components/navbar.html" class="iframe-navbar"></iframe>
-
+    <header class="barra-navegacion">
+    
+        <link rel="stylesheet" href="../assets/css/navbar.css">
+    
+        <a href="#" class="logo">
+            <img src="../assets/images/logo/LogoLEBASI.png" alt="logo" class="img-logo">
+            <h2 class="nombre-logo">LEBASI</h2>
+        </a>
+    
+        <div class="barra-busqueda">
+    
+        </div>
+        
+        <nav>
+            <a href="#" class="nav-link">perfil</a>
+            <a href="#" class="nav-link">carrito</a>
+            <a href="#" class="nav-link">favoritos</a>
+        </nav>
+    </header>
     <!-------------------------------------------------SLIDER-------------------------------------------------->
 
     <!-- Slider main container -->
@@ -47,109 +64,71 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
     </div>
-
-    <!---------------------------------------------------Section Articulo--------------------------------------------------->
-    <section id="sectionArticulos" class="sectionArticulos">
-        <div class="Articulos">
-            <h2 class="ArticulosTitulo">Artículos</h2>
-        </div>
-        
-        <div class="SuperContenedor">
-            <ul>
-                <div class="ContenedorCuadroArticulo1">
-                    <div class="CuadroArticulo1">
-                        <li>
-                            <a href="public/index_pagina_1.html" class="Climatizacion">
-                                <img src="assets/images/categorias/climatizacion.jpg" alt="climatizacion" class="climatizacion">
-                                <div class="TextoCuadroArticulo">
-                                    <h3>Climatización</h3>
-                                    <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
-                                </div>
-                            </a>
-                        </li>
-                    </div>
-                </div>
-                
-                
-                <div class="ContenedorCuadroArticulo2">
-                    <div class="CuadroArticulo2">
-                        <li>
-                            <a href="#" class="Cocina">
-                                <img src="assets/images/categorias/cocina.png" alt="Cocina" class="Cocina">
-                                <div class="TextoCuadroArticulo">
-                                    <h3>Cocina</h3>
-                                    <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
-                                </div>
-                            </a>
-                        </li>
-                    </div>
-                </div>
+<!---------------------------------------------------Section Articulo--------------------------------------------------->
+<section id="sectionArticulos" class="sectionArticulos">
+    <div class="Articulos">
+        <h2 class="ArticulosTitulo">Artículos</h2>
+    </div>
     
-                <div class="ContenedorCuadroArticulo3">
-                    <div class="CuadroArticulo3">
-                        <li>
-                            <a href="#" class="Entretenimiento">
-                                <img src="assets/images/categorias/entretenimiento.png" alt="Entretenimiento" class="Entretenimiento">
-                                <div class="TextoCuadroArticulo">
-                                    <h3>Entretenimiento</h3>
-                                    <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
-                                </div>
-                                
-                            </a>
-                        </li>
+    <div class="SuperContenedor">
+        <ul>
+            <li class="ContenedorCuadroArticulo">
+                <a href="public/index_pagina_1.html" class="CuadroArticulo">
+                    <img src="assets/images/categorias/climatizacion.jpg" alt="climatizacion" class="climatizacion">
+                    <div class="TextoCuadroArticulo">
+                        <h3>Climatización</h3>
+                        <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
                     </div>
-                </div>
-    
-                <div class="ContenedorCuadroArticulo4">
-                    <div class="CuadroArticulo4">
-                        <li>
-                            <a href="#" class="Electronica">
-                                <img src="assets/images/categorias/computacion.png" alt="Electronica" class="Electronica">
-                                <div class="TextoCuadroArticulo">
-                                    <h3>Electrónica</h3>
-                                    <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
-                                </div>
-                                
-                            </a>
-                        </li>
+                </a>
+            </li>
+            <li class="ContenedorCuadroArticulo">
+                <a href="#" class="CuadroArticulo">
+                    <img src="assets/images/categorias/cocina.png" alt="Cocina" class="Cocina">
+                    <div class="TextoCuadroArticulo">
+                        <h3>Cocina</h3>
+                        <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
                     </div>
-                </div>
-    
-                <div class="ContenedorCuadroArticulo5">
-                    <div class="CuadroArticulo5">
-                        <li>
-                            <a href="#" class="CuidadoPersonal">
-                                <img src="assets/images/categorias/cuidado_personal.png" alt="CuidadoPersonal" class="CuidadoPersonal">
-                                <div class="TextoCuadroArticulo">
-                                    <h3>Cuidado Personal</h3>
-                                    <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
-                                </div>
-                                
-                            </a>
-                        </li>
+                </a>
+            </li>
+            <li class="ContenedorCuadroArticulo">
+                <a href="#" class="CuadroArticulo">
+                    <img src="assets/images/categorias/entretenimiento.png" alt="Entretenimiento" class="Entretenimiento">
+                    <div class="TextoCuadroArticulo">
+                        <h3>Entretenimiento</h3>
+                        <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
                     </div>
-                </div>
-    
-                <div class="ContenedorCuadroArticulo6">
-                    <div class="CuadroArticulo6">
-                        <li>
-                            <a href="#" class="Accesorios">
-                                <img src="assets/images/categorias/accesorios.png" alt="Accesorios" class="Accesorios">
-                                <div class="TextoCuadroArticulo">
-                                    <h3>Accesorios</h3>
-                                    <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
-                                </div>
-                                
-                            </a>
-                        </li>
+                </a>
+            </li>
+            <li class="ContenedorCuadroArticulo">
+                <a href="#" class="CuadroArticulo">
+                    <img src="assets/images/categorias/computacion.png" alt="Electronica" class="Electronica">
+                    <div class="TextoCuadroArticulo">
+                        <h3>Electrónica</h3>
+                        <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
                     </div>
-                </div>
-                
-            </ul>
-        </div>
-        
-
-    </section>
+                </a>
+            </li>
+            <li class="ContenedorCuadroArticulo">
+                <a href="#" class="CuadroArticulo">
+                    <img src="assets/images/categorias/cuidado_personal.png" alt="CuidadoPersonal" class="CuidadoPersonal">
+                    <div class="TextoCuadroArticulo">
+                        <h3>Cuidado Personal</h3>
+                        <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="ContenedorCuadroArticulo">
+                <a href="#" class="CuadroArticulo">
+                    <img src="assets/images/categorias/accesorios.png" alt="Accesorios" class="Accesorios">
+                    <div class="TextoCuadroArticulo">
+                        <h3>Accesorios</h3>
+                        <p>Gran variedad de ventiladores como en pedestal, de techo, industrial, etc.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
 
     <!---------------------------------------------------Section--------------------------------------------------->
     <section id="ProductosNuevos" class="ProductosNuevos">

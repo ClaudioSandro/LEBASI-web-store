@@ -116,134 +116,82 @@ body{
 }
 
 
-
 /*********************************SectionArticulo*********************************/
 
-
-.SuperContenedor{
-    /*background-color: yellow; /*Cambiar color*/
+.SuperContenedor {
     padding-left: 250px;
     padding-right: 250px;
-    
 }
 
-.ArticulosTitulo{
+.ArticulosTitulo {
     text-align: center;
     padding: 20px 0;
-    
-    
 }
-.sectionArticulos ul{
+
+.sectionArticulos ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
-.sectionArticulos a{
+.sectionArticulos a {
     text-decoration: none;
-    color: white;
+    color: white; /* Asegura que el texto sea visible */
 }
 
-.sectionArticulos h3{
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 8px;
+.TextoCuadroArticulo h3 {
+    margin: 15px 0 8px 15px;
+    color: white; /* Asegura que el texto sea visible */
 }
 
-.sectionArticulos p{
-    margin-left: 15px;
-    margin-right: 10px;
-    margin-top: 2px;
+.TextoCuadroArticulo p {
+    margin: 2px 10px 0 15px;
+    color: white; /* Asegura que el texto sea visible */
 }
 
-
-
-/*CuadroArticulo1*/
-
-.ContenedorCuadroArticulo1,
-.ContenedorCuadroArticulo2,
-.ContenedorCuadroArticulo3,
-.ContenedorCuadroArticulo4,
-.ContenedorCuadroArticulo5,
-.ContenedorCuadroArticulo6
-{
-    width: 370px;
-    height: 300px;
-    /*background-color: blue;*/
-    margin-bottom: 30px;
+.ContenedorCuadroArticulo {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta el tamaño de los artículos */
+    margin: 10px;
     position: relative;
-    padding: 30px;
-
+    padding: 0; /* Ajusta el padding para evitar recortes */
 }
 
-.CuadroArticulo1,
-.CuadroArticulo2,
-.CuadroArticulo3,
-.CuadroArticulo4,
-.CuadroArticulo5,
-.CuadroArticulo6
-{
-    width: 370px;
-    height: 300px;
-    background-color: #277be9;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.CuadroArticulo1 img,
-.CuadroArticulo2 img,
-.CuadroArticulo3 img,
-.CuadroArticulo4 img,
-.CuadroArticulo5 img,
-.CuadroArticulo6 img
-{
+.CuadroArticulo {
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
+    background-color: #277be9; /* Fondo azul para contraste */
+    position: relative;
+    padding: 20px; /* Ajusta el padding para evitar recortes */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
+.CuadroArticulo img {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: cover;
+}
 
-
-@media screen and (max-width: 768px){
-    .SuperContenedor{
-        width:100%;
-        padding-left: auto;
-        padding-right: auto;
-        grid-gap: 30px;
-        padding: 35px 0;
+@media screen and (max-width: 768px) {
+    .SuperContenedor {
+        padding: 0 10px;
     }
 
-    .sectionArticulos ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .ContenedorCuadroArticulo {
+        flex: 1 1 calc(50% - 20px); /* Ajusta el tamaño de los artículos en pantallas más pequeñas */
+        margin: 10px;
         padding: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        list-style: none;
     }
+}
 
-    .ContenedorCuadroArticulo1,
-    .ContenedorCuadroArticulo2,
-    .ContenedorCuadroArticulo3,
-    .ContenedorCuadroArticulo4,
-    .ContenedorCuadroArticulo5,
-    .ContenedorCuadroArticulo6
-    {
-        width: 300px;
-        height: 250px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding-left: 10%;
-        padding-right: 10%;
-        
+@media screen and (max-width: 480px) {
+    .ContenedorCuadroArticulo {
+        flex: 1 1 100%; /* Ajusta el tamaño de los artículos en pantallas muy pequeñas */
+        margin: 10px;
+        padding: 0;
     }
 }
 /*********************************SectionProductosNuevos********************************/
