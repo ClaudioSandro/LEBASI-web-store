@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <!-- Incluir el header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Contenido principal -->
+    <main>
+        
+        
+
+
+    </main>
+    
+    <!-- Incluir el footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Cargar el contenido del navbar.html
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Cargar el contenido del footer.html
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
